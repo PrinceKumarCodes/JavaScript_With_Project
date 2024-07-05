@@ -1,1 +1,2 @@
-console.log("prince kumar singh");
+console.log("Hello!");
+console.log("I'm prince kumar");
