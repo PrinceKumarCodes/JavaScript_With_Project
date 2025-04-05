@@ -28,7 +28,7 @@ age = null;
 age = 32; //updating is allowed
 console.log(age); //32
 
-// -------------------const--------------------------
+// ------------------const--------------------------
 
 const city = "new york";
 console.log(city); //new york
@@ -36,3 +36,5 @@ console.log(city); //new york
 //const city = "new delhi"// ❌ Error , we can't redeclare a const variable
 
 // city = "london"; //❌ Error, we can't update or reassign a const variable
+
+console.log(Math.pow(2, 3));

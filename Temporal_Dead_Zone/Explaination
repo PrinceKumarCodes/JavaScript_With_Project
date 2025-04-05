@@ -1,0 +1,16 @@
+(1) Global Scope:- A variable declared outside any function or block is accessible throughout the script.
+
+(2) Block Scope:- Variables declared with let and const inside a block {} are limited to that block.
+
+(3) Function Scope:- Variables declared inside a function can only be accessed within that function.
+
+(4) Var Scope:- Variables declared with var are function-scoped but not block-scoped; they get hoisted to the top of their function or global context.
+
+(5) Temporal Dead Zone (TDZ):- Variables declared with let and const cannot be accessed before their declaration due to TDZ, leading to a ReferenceError.
+
+
+
+
+
+
+

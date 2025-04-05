@@ -45,5 +45,17 @@ let person3 = {
     console.log("My name is " + this.name);
   },
 };
-
 person3.message();
+
+let obj = {
+  //key ko double quote me likh sakte ho or jab key ke bich me space ho to compulsry ho jata hai
+  name: "prince",
+  "full name": "Prince kumar",
+  age: 22,
+  greet: function () {
+    console.log("Hello Prince , How are you!");
+  },
+};
+console.log(obj);
+obj.greet(); //function call
+console.log(typeof obj); //cheak type of obj variable
