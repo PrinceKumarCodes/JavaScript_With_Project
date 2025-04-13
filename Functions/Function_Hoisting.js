@@ -9,4 +9,5 @@ function greet() {
 result(); // Error: Cannot access 'result' before initialization
 let result = function () {
   console.log("Hello Prince");
+  
 };
