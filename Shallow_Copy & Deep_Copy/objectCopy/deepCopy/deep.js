@@ -1,6 +1,6 @@
 // ✅ Deep Copy using JSON methods (good for plain objects without functions, Date, Map, Set, etc.)
-
 // Original object with nested structure
+
 const obj = {
   name: "prince kumar singh",
   age: 22,
