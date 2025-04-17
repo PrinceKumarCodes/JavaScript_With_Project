@@ -18,7 +18,7 @@ function sumNum(a, b) {
 console.log(result); // Accessible globally due to 'var'.
 
 // ---------------------------------------------------
-console.log(marks); // ReferenceError: Cannot access 'marks' before initialization.
+console.log(marks); // ReferenceError: Cannot access 'marks' before initialization. //ye let or const ke sath error dega  jabki var ke sath undefined print hoga
 console.log("prince");
 console.log("kumar singh");
 let marks = 100; // The section from line 21 to line 24 is called the "Temporal Dead Zone (TDZ)"

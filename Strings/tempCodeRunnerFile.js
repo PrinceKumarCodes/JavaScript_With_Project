@@ -15,7 +15,7 @@ singh
 raj
 `;
 console.log(string3);
-let firstName = new String("Prince kumar singh");
+let firstName = new String("Prince'D kumar singh");
 console.log(firstName);
 
 //concatenating strings
@@ -33,7 +33,7 @@ let firstValue = "Mobile";
 let secondValue = "Charger";
 console.log(`${firstValue} and ${secondValue}`); //This is template literals(``);
 
-//length property on strings
+//length method on strings
 // the length property is used to know the length of various data types such as strings, arrays, and other iterable objects.
 let message = "Hello prince!";
 let finalMessage = message.length;

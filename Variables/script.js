@@ -24,7 +24,6 @@ age = true;
 age = null;
 
 //let age = 43 //it will give you error , we can't redeclare a let variable
-
 age = 32; //updating is allowed
 console.log(age); //32
 
