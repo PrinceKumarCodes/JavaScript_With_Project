@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Q1. Write a JavaScript program that creates a button and add a click event listener to log a message when it's clicked -->
+</head>
+
+<body>
+    <!-- <button id="btn"> Click Me!</button>
+    <p id="fpara"> Prince</p>
+    <script>
+        //Get the button element
+        const button = document.getElementById('btn');
+        fpara = document.getElementById('fpara');
+        //Add a click event listener to the button
+        button.addEventListener('click', () => {
+            fpara.textContent = 'Button was clicked!';
+            fpara.style.color = 'green';
+
+        })
+    </script> -->
+
+    <p id="fpara"> Please click Button</p>
+
+
+    <script>
+        //Create a button element
+        const button = document.createElement('button');
+        const fpara = document.getElementById('fpara');
+        button.textContent = 'Click Me!';
+
+        //Add a click event listener to the button
+        button.addEventListener('click', () => {
+            fpara.textContent = 'Button was clicked!';
+            fpara.style.color = 'green';
+
+        })
+        //Append the button to the body 
+        document.body.appendChild(button);
+        document.body.appendCHild(p);
+
+    </script>
+</body>
+
+</html>

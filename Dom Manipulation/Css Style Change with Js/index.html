@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+cssText:
+Sets or gets the entire inline style of an element as a single string.
+
+className:
+Gets or sets the full class attribute as a string (overwrites all classes if set).
+
+setAttribute:
+Adds a new attribute or changes the value of an existing attribute on an HTML element.
+
+classList:
+A special object that makes it easy to add, remove, toggle, or check individual classes without touching the full className.
+
+
+
+    CSS Manipulation with JS
+
+    1. You can change the CSS of an element using the style property.
+    2. You can set multiple properties at once using the cssText property.
+
+    3. The classList property allows you to manipulate classes on an element.
+    4. The classList property has several methods:
+    - add(token) → Add one or more tokens (no duplicates).
+    - contains(token) → Check if a token exists (true/false).
+    - remove(token) → Remove one or more tokens.
+    - toggle(token, force?) → Add if missing, remove if present (optional force).
+    - replace(oldToken, newToken) → Replace old token with a new one.
+
+    Example:
+
+    classList = {
+        add: function(token) { ... },
+        contains: function(token) { ... },
+        remove: function(token) { ... },
+        toggle: function(token, force?) { ... },
+        replace: function(oldToken, newToken) { ... }
+    }
+
+
+Mini Tip (one-liners to memorize):
+
+add = insert
+contains = check
+remove = delete
+toggle = flip
+replace = swap
+ -->
+
+<body>
+    <div id="fdiv" class="goku vegeta vegeta1">
+        first div
+        <p id="fpara">
+            This is a paragraph.
+        </p>
+        <div id="sdiv">
+            second div
+            <p id="spara" class="goku vegeta">
+                This is a paragraph.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let firstDivElement = document.getElementById("fdiv");
+
+        let firstParaElement = document.getElementById("fpara");
+        let secondDivElement = document.getElementById("sdiv");
+
+        //We want to change  the background color of the first div element
+        firstDivElement.style.backgroundColor = "blue";
+
+        //We can only one property set at a time
+        // If you want to set multiple properties at once , you can use the cssText property
+
+        firstDivElement.style.cssText =
+            "background: yellow; color: white; font-size:20px; border:4px";
+
+    </script>
+</body>
+
+</html>

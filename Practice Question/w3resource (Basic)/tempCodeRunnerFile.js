@@ -1,1 +1,1 @@
- strArr[n - i - 1]
+randomChar

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutiliplication and division</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 340px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            border: 1px solid rgb(217, 217, 217);
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+                -10px -10px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            border: 0px solid black;
+            padding: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            box-shadow: 4px 2px 2px rgba(248, 223, 223, 0.1);
+        }
+
+        button {
+            border: 1px solid #7d807d;
+            padding: 2px 3px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #39b439;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Write a JavaScript program to calculate multiplication and division of two numbers (input from the user). -->
+
+    <form action="">
+        <table>
+            <tr>
+                <td>1st Number :</td>
+                <td><input type="text" value="" id="firstVal"></td>
+            </tr>
+            <tr>
+                <td>2nd Number :</td>
+                <td><input type="text" value="" id="secondVal"></td>
+            </tr>
+            <tr>
+                <td><button id="multiBtn">Multiply</button></td>
+                <td><button id="divideBtn">Divide</button></td>
+            </tr>
+            <tr>
+                <td>The Result is :</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="result">3</td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    const firstVal = document.getElementById("firstVal");
+    const secondVal = document.getElementById("secondVal");
+    const result = document.getElementById("result");
+    const multiBtn = document.getElementById("multiBtn");
+    const divideBtn = document.getElementById("divideBtn");
+
+    multiBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        result.innerHTML = Number(firstVal.value) * Number(secondVal.value);
+
+    });
+    divideBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        result.innerHTML = Number(firstVal.value) / Number(secondVal.value);
+    });
+
+</script>
+
+</html>

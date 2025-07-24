@@ -4,6 +4,8 @@ try {
   // This will cause a reference error
 } catch (error) {
   console.log("balle balle ");
+  console.log("Error caught: ", error.name); // ReferenceError
+  console.log("Error caught: ", error.message); // rahul is not defined
 }
 
 setTimeout(() => {

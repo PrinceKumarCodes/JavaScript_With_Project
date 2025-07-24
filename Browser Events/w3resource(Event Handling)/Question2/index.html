@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropdown-button" id="dropdown-button">Select a option</button>
+        <ul class="dropdown-options">
+
+            <li class="dropdown-option"></li>
+            <li class="dropdown-option">Prince kumar singh</li>
+            <li class="dropdown-option">Karan kumar singh</li>
+            <li class="dropdown-option">Amit kumar singh</li>
+            <li class="dropdown-option">Solanki singh</li>
+
+        </ul>
+
+    </div>
+    <script>
+        const dropdownButton = document.querySelector('.dropdown-button');
+        const dropdownOptions = document.querySelectorAll('.dropdown-options');
+        dropdownButton.addEventListener('click', () => {
+            dropdownOptions.style.display = dropdownOptions.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+
+</html>

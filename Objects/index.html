@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // -----------------------------------------------------
+        const student = {
+            fullName: "prince kumar singh",
+            marks: 9.5,
+            studentMarks: function () {
+                console.log("mark = ", this.marks);
+            }
+        }
+
+        //---------------------------------------------------------
+        const employee = {
+            //For define function, both way is valid
+            calcTax() {
+                console.log("tax rate is 10%");
+            },
+            calcTax2: function () {
+                console.log("tax rate is 20%");
+            }
+        }
+
+        const karanArjun = {
+            salary: 43000
+        }
+        karanArjun.__proto__ = employee; // we are adding employee's prototype in karanArjun's prototype , we will be able to access easly 
+        // karanArjun.calTax() types in console 
+
+        //---------------------------------------------
+        const karanArjun2 = {
+            salary: 54000,
+            calcTax: function () {
+                console.log("Tax rate is 20%")
+            }
+        }
+
+        karanArjun2.__proto__ = employee;
+        // but dono me same name ke method hai tooo usme khud ke method ka priority zaida hoga ,khud ke method me likhe gaye contend print hoga 
+        // write this karanArjun2.calcTax() in console then see 
+    </script>
+</body>
+
+</html>
